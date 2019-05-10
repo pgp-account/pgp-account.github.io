@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-10T08:48:27.601Z">
+<meta property="og:updated_time" content="2019-05-10T13:47:26.085Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
@@ -52,8 +52,6 @@
           <a class="main-nav-link" href="/archives">Archives</a>
         
           <a class="main-nav-link" href="/about">About</a>
-        
-          <a class="main-nav-link" href="/communication">communication</a>
         
       </nav>
       <nav id="sub-nav">
@@ -95,6 +93,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        <!-- 文章目录 -->
+        
+          <div id="toc" class="toc-article">
+              <strong class="toc-title">文章目录</strong>
+              <!-- list_number:false表示不显示序号，如果你想要打开可以设置为true -->
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+          </div>
+        
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -108,11 +114,41 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/09/hello-world/" data-id="cjvht8fis0000b0ajlo4hduaq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/09/hello-world/" data-id="cjvi63b5l00005wajm5o900fb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/表单验证/">表单验证</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/表格/">表格</a></li></ul>
 
+
+      <!--百度分享-->
+      <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+      </div>
+      <script>
+        window._bd_share_config={
+          "common":{
+            "bdSnsKey":{},
+            "bdText":"",
+            "bdMini":"2",
+            "bdMiniList":false,
+            "bdPic":"",
+            "bdStyle":"0",
+            "bdSize":"16"
+          },
+          "share":{},
+          "image":{
+            "viewList":["qzone","tsina","tqq","renren","weixin"],
+            "viewText":"分享到：",
+            "viewSize":"16"
+          }
+        };
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+      </script>
     </footer>
   </div>
   
@@ -133,6 +169,8 @@
 
   
 </article>
+
+
 
 </section>
         
@@ -197,6 +235,15 @@
 
   
     
+    <div class="widget-wrap widget-list">
+        <!-- ''中填入_config.yml中widgets下的名字 -->
+        <h3 class="widget-title">communiation</h3>
+        <div class="widget">
+            <!--这里添加你要写的内容-->
+            我的联系方式
+        </div>
+    </div>
+
   
 </aside>
         
@@ -218,8 +265,6 @@
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="/about" class="mobile-nav-link">About</a>
-  
-    <a href="/communication" class="mobile-nav-link">communication</a>
   
 </nav>
     
